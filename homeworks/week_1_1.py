@@ -22,3 +22,7 @@ from typing import List
 
 def shift_items(_list: List[int], bias: int) -> List[int]:
     pass
+
+bias = 2
+_list = [1,2,3]
+[x+bias for x in _list]
