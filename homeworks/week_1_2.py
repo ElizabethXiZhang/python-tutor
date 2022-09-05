@@ -26,3 +26,10 @@ from typing import List
 
 def pick_odd_numbers(_list: List[int]) -> List[int]:
     pass
+
+_list = [3, 3, 3, 3, 3, 5, 3, 4, 8, 9]
+new_list = []
+for i in _list:
+    if  (i % 2) != 0 and i not in new_list:
+        new_list.append(i)
+print(new_list)
