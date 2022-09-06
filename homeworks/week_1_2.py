@@ -23,13 +23,12 @@
 
 from typing import List
 
-
-def pick_odd_numbers(_list: List[int]) -> List[int]:
-    pass
-
-_list = [3, 3, 3, 3, 3, 5, 3, 4, 8, 9]
+_list = [3, 3, 3, 12, 354, 7,  3, 3, 5, 3, 24, 42, 53, 55, 4, 8, 9]
 new_list = []
-for i in _list:
-    if  (i % 2) != 0 and i not in new_list:
-        new_list.append(i)
-print(new_list)
+def shift_items(_list: List[int]) -> List[int]:
+    for i in _list:
+        if  (i % 2) != 0 and i not in new_list:
+            new_list.append(i)
+    print(new_list)
+
+shift_items(_list)
