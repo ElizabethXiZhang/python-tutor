@@ -19,6 +19,16 @@
 
 from typing import List
 
-
+_list = [[], [2, 1], [-17, 20000000, 1, 1]]
+biases = [3, 0, -20000000]
 def shift_items(_list: List[List[int]], biases: List[int]) -> List[List[int]]:
-    pass
+
+
+        for anchor in range(len(biases)):
+            print(_list[anchor])
+            print(biases[anchor])
+            for item in _list[anchor]:
+                #print(item, "+", biases[anchor])
+                print(item + biases[anchor])
+    
+shift_items(_list, biases)
