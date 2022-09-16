@@ -1,5 +1,6 @@
 https://www.hackerrank.com/challenges/find-a-string/problem?isFullScreen=true
 
+###my answer
 def count_substring(string, sub_string):
     1 <= len(string) <= 200
     anchor = []
@@ -12,6 +13,22 @@ def count_substring(string, sub_string):
                 count += 1
             print(count)
             
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
+
+
+###correct answer 
+def count_substring(string, sub_string):
+    count = 0
+    while string.find(sub_string) != -1:
+        count += 1
+        string = string[string.find(sub_string) + 1:]
+    return count
+
 if __name__ == '__main__':
     string = input().strip()
     sub_string = input().strip()
