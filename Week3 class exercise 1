@@ -12,3 +12,13 @@ def cartesian_product(A, B):
 cartesian_product([1, 2], [3, 4])
 
 correct answer:
+
+def cartesian_product(A, B):
+    list = []
+    for i in range(len(A)):
+        for j in range(len(B)):
+            t = (A[i], B[j])
+            list.append(t)
+    print(" ".join(map(str,list)))
+    
+cartesian_product([1, 2], [3, 4])
