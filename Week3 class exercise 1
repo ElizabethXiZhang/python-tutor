@@ -1,2 +1,14 @@
 https://www.hackerrank.com/challenges/itertools-product/problem?isFullScreen=true
 
+my answer: 
+
+def cartesian_product(A, B):
+    for i in len(1, A):
+        for j in len(1, B):
+            product = (A[i] * B[j]), () end=" ")
+            j += 1
+        print(" ")
+    
+cartesian_product([1, 2], [3, 4])
+
+correct answer:
