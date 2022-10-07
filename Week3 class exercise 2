@@ -1,1 +1,12 @@
 https://www.hackerrank.com/challenges/itertools-combinations/problem?isFullScreen=true
+
+#this answer gives the correct result but does not pass the tests ???
+from itertools import combinations
+def result (S, num):
+    for j in range(1, num+1):
+        x =sorted(list(combinations(S, j)))
+#         print(x)
+        for i in x:
+            print("".join(i).upper())
+inputs = (input()).split()
+result("hack", 2)
