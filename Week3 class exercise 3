@@ -1,1 +1,10 @@
 https://www.hackerrank.com/challenges/itertools-permutations/problem?isFullScreen=true
+
+#this answer gives the correct result but does not pass the tests ???
+from itertools import permutations
+def result (S, num):
+    x =sorted(list(permutations(S, num)))
+    for i in x:
+        print("".join(i).upper())
+
+result("hack", 2)
